@@ -21,7 +21,6 @@ const requestListener = async (req, res) => {
   if (req.url === '/posts' && req.method === 'GET') {
     const allPosts = await Post.find();
     handlerSuccess(res, allPosts);
-    res.end();
   } else if (req.url === '/posts' && req.method === 'POST') {
     req.on('end', async () => {
       try {
