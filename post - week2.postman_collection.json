@@ -1,0 +1,107 @@
+{
+	"info": {
+		"_postman_id": "23bdca80-230e-46ef-ba90-c4410baaccfb",
+		"name": "post - week2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23409052"
+	},
+	"item": [
+		{
+			"name": "https://nodeweek2-post.onrender.com/posts",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://nodeweek2-post.onrender.com/posts",
+					"protocol": "https",
+					"host": [
+						"nodeweek2-post",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://nodeweek2-post.onrender.com/posts Copy",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"測試2\",\r\n    \"tags\":[\"test\",\"tryItOut\"],\r\n    \"type\":\"person\",\r\n    \"content\":\"測試內容2\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://nodeweek2-post.onrender.com/posts",
+					"protocol": "https",
+					"host": [
+						"nodeweek2-post",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://nodeweek2-post.onrender.com/posts Copy 2",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"測試2\",\r\n    \"tags\":[\"test\",\"tryItOut\"],\r\n    \"type\":\"person\",\r\n    \"content\":\"測試內容2\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://nodeweek2-post.onrender.com/posts/:id",
+					"protocol": "https",
+					"host": [
+						"nodeweek2-post",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"posts",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
